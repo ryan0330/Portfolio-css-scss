@@ -83,7 +83,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -92,10 +92,6 @@ h3 {
           align-items: center;
   background: #f8f6ee;
   cursor: pointer;
-}
-
-.btn:focus {
-  border: 2px solid blue;
 }
 
 .homeTop {
@@ -112,12 +108,11 @@ h3 {
 }
 
 .home_left {
-  margin: 80px 0 20px 0;
+  margin: 80px 0 20px;
 }
 
 .home_left img {
   width: 360px;
-  margin-bottom: 20px;
 }
 
 .home_left p {
@@ -246,11 +241,11 @@ h3 {
   vertical-align: middle;
 }
 
-p {
+#main p {
   display: inline-block;
-  letter-spacing: 2px;
   line-height: 32px;
   font-size: 18px;
+  letter-spacing: 2px;
   margin: 86px 0 58px 0;
 }
 
@@ -436,13 +431,7 @@ h2 {
 }
 
 .aside_img:hover a {
-  display: block;
-}
-
-.aside_img_sen {
-  width: 280px;
-  height: 205px;
-  margin: 10px;
+  display: inline-block;
 }
 
 .aside_img-display {
@@ -452,9 +441,13 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .connection {
